@@ -15,7 +15,7 @@
 - **Dimensões:** DimDate; DimCustomer; DimEmployee; DimProduct;
 - **Factos:** Quantity; UnitPrice; TotalLineAmount;
 
-```plantuml-svg
+```plantuml
 @startuml Dimensions
 !theme plain
 hide circle
@@ -93,4 +93,4 @@ fact -right-|| emp
 
 # Phase 2
 
-Assumindo que a base de dados disponibilizada pelo professor pode ser utilizada como a Staging Area, estou a criar os scripts de criação das tabelas SQL para seguir o tutorial do [Exercício 2](https://moodle.diogo.wtf/Base%20de%20Dados%20e%20Armaz%C3%A9m%20de%20Dados%2F11%20-%20Semana%20de%2024%20Nov%20a%2028%20Nov%2FExercise%202.zip) que, essencialmente automatiza a criação de uma BD Staging e corre $n$ scripts SQL que estão numa pasta para criar as tabelas da Staging Area. (...)
+~~Assumindo que a base de dados disponibilizada pelo professor pode ser utilizada como a Staging Area~~ Utilizando a BD disponibilizada como a fonte de dados (e sem os alterar), estou a criar os scripts de criação das tabelas SQL para a Staging Area para seguir o tutorial do [Exercício 2](https://moodle.diogo.wtf/Base%20de%20Dados%20e%20Armaz%C3%A9m%20de%20Dados%2F11%20-%20Semana%20de%2024%20Nov%20a%2028%20Nov%2FExercise%202.zip) que, essencialmente automatiza a criação de uma BD Staging e corre $N$ scripts SQL que estão numa [pasta](DataMart/SQLScripts/Staging) para criar as tabelas da Staging Area. (...)

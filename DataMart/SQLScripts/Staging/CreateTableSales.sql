@@ -1,14 +1,13 @@
-CREATE TABLE [dbo].[Sales](
-	[SaleID] [int] IDENTITY(1,1) NOT NULL,
-	[SaleDate] [date] NOT NULL,
-	[CustomerNumber] [numeric](10, 0) NOT NULL,
-	[EmployeeNumber] [numeric](6, 0) NOT NULL,
-	[PaymentDate] [date] NOT NULL,
-	[ProductsTotalValue] [numeric](19, 6) NOT NULL,
-	[VAT] [numeric](19, 6) NOT NULL,
-	[FinalValue] [numeric](19, 6) NOT NULL,
- CONSTRAINT [PK_Sales] PRIMARY KEY CLUSTERED 
-(
-	[SaleID] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'Sales')
+	CREATE TABLE [dbo].[Sales](
+		[SaleID] [int],
+		[SaleDate] [date],
+		[CustomerNumber] [numeric](10, 0),
+		[EmployeeNumber] [numeric](6, 0),
+		[PaymentDate] [date],
+		[ProductsTotalValue] [numeric](19, 6),
+		[VAT] [numeric](19, 6),
+		[FinalValue] [numeric](19, 6),
+	)
+ELSE
+	TRUNCATE TABLE Sales
