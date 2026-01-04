@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\temp\\TrabPrat\\CreateDateDimension\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E15D9A0-348F-091E-1DFB-8AF7BF31FE81}|CreateDateDimension\\CreateDateDimension.dwproj|C:\\temp\\TrabPrat\\CreateDateDimension\\CreateDateDimension\\DimDate.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{2E15D9A0-348F-091E-1DFB-8AF7BF31FE81}|CreateDateDimension\\CreateDateDimension.dwproj|solutionrelative:CreateDateDimension\\DimDate.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DimDate.dim [Design]",
+              "DocumentMoniker": "C:\\temp\\TrabPrat\\CreateDateDimension\\CreateDateDimension\\DimDate.dim",
+              "RelativeDocumentMoniker": "CreateDateDimension\\DimDate.dim",
+              "ToolTip": "C:\\temp\\TrabPrat\\CreateDateDimension\\CreateDateDimension\\DimDate.dim [Design]",
+              "RelativeToolTip": "CreateDateDimension\\DimDate.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-04T19:07:37.087Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
