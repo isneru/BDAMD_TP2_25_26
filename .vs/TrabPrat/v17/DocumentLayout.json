@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\BD\\TP2\\DataMart\\",
+  "WorkspaceRootPath": "C:\\temp\\TrabPrat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1E0F702D-10A5-BF56-4335-E16DCC23D102}|DataMart\\DataMart.dtproj|C:\\BD\\TP2\\DataMart\\DataMart\\DataMart ETL Package.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{1E0F702D-10A5-BF56-4335-E16DCC23D102}|DataMart\\DataMart.dtproj|solutionrelative:DataMart\\DataMart ETL Package.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+      "AbsoluteMoniker": "D:0:0:{19D7F5D9-5201-E755-AE15-81674A2C6B97}|TrabPrat\\TrabPrat.dtproj|C:\\temp\\TrabPrat\\TrabPrat\\DataMart ETL Package.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{19D7F5D9-5201-E755-AE15-81674A2C6B97}|TrabPrat\\TrabPrat.dtproj|solutionrelative:TrabPrat\\DataMart ETL Package.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,12 +20,12 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DataMart ETL Package.dtsx [Design]",
-              "DocumentMoniker": "C:\\BD\\TP2\\DataMart\\DataMart\\DataMart ETL Package.dtsx",
-              "RelativeDocumentMoniker": "DataMart\\DataMart ETL Package.dtsx",
-              "ToolTip": "C:\\BD\\TP2\\DataMart\\DataMart\\DataMart ETL Package.dtsx [Design]",
-              "RelativeToolTip": "DataMart\\DataMart ETL Package.dtsx [Design]",
+              "DocumentMoniker": "C:\\temp\\TrabPrat\\TrabPrat\\DataMart ETL Package.dtsx",
+              "RelativeDocumentMoniker": "TrabPrat\\DataMart ETL Package.dtsx",
+              "ToolTip": "C:\\temp\\TrabPrat\\TrabPrat\\DataMart ETL Package.dtsx [Design]",
+              "RelativeToolTip": "TrabPrat\\DataMart ETL Package.dtsx [Design]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-01-03T16:09:54.899Z",
+              "WhenOpened": "2026-01-04T00:41:13.266Z",
               "EditorCaption": " [Design]"
             }
           ]

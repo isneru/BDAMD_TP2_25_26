@@ -98,3 +98,7 @@ fact -right-|| emp
 # Phase 3
 
 Utilizando o modelo dimensional criado na Fase 1, estou a criar os scripts SQL de ETL para popular o Data Mart a partir da Staging Area. Estes scripts estão na [pasta](DataMart/SQLScripts/DataMart) e são executados por um script principal que automatiza o processo de ETL.
+
+# Phase 4 (SSIS)
+
+Utilizando o **Visual Studio 2022** e com ajuda do **SQL Server Management Studio** estou a criar um pacote SSIS que automatiza o processo de ETL (Extraction, Transformation e Loading), executando os scripts SQL criados na Fase 3.
