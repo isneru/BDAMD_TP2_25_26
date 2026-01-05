@@ -170,9 +170,10 @@ END
 ```
 
 Durante este processo, reparei também que as tabelas dimensionais estavam bastante incompletas e até mesmo erradas, com menos atributos do que a própria **Staging**. Foram alterados os scripts de criação da **DataMart** para estarem de acordo com a seguinte fórmula:
-$$
-\text{Nº atributos DimTable} >= \text{Nº atributos StagingTable} + 4
-$$
+
+```
+Nº atributos DimTable >= Nº atributos StagingTable + 4
+```
 
 Onde o valor 4 da fórmula refere-se ao número de atributos convencionais das tabelas dimensionais:
   - `<model>`Key
