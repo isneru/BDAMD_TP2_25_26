@@ -122,3 +122,60 @@ Atualmente, o projeto cria a BD `Steinway_Staging`, itera e executa os scripts d
 É criado também um segundo **Integration Services Project** com um único propósito: Ler a tabela `DimDate` da **Staging** para extrair para um ficheiro [`DimDate.csv`](Utils/DimDate.csv).
 
 Após a adição manual de algumas colunas no ficheiro `.csv`, são feitas filtragens e mapeamentos para definir os conteúdos inseridos na `DimDate` da BD **DataMart**.
+
+# Phase 5 (Transformation)
+
+## Início do Exercício 4
+
+Ao iniciar o [exercício 4](https://moodle.diogo.wtf/Base%20de%20Dados%20e%20Armaz%C3%A9m%20de%20Dados%2F13%20-%20Semana%20de%2008%20Dez%20a%2012%20Dez%2FExercise%204.zip), notei que a tabela da BD **Original** `Departaments` se encontrava mal escrita e então passei pelo processo de entender como poderia manipular as variáveis de forma a mudar apenas o nome da base de dados, sem mudar o conteúdo ou afetar a automatização das outras tabelas. A alteração foi bastante simples, mas para isso foi necessário aprender a utilizar a função de **debug** e **breakpoints** do Visual Studio.
+Primeiramente, tomei iniciativa de corrigir as ocurrências do nome "Departaments" para "Departments" dentro do [script de criação da tabela](SQLScripts/Staging/CreateTableDepartaments.sql) **e mudar também o nome do ficheiro para haver consistência, o que estava errado**.
+No começo do trabalho, eu decidi que o mais correto seria criar os scripts de criação das tabelas com o nome exato das tabelas da BD **Original**, independentemente do contexto.
+
+### Porquê?
+
+Neste projeto, a abordagem para o problema foi usar o nome dos ficheiros como método de extrair os nomes das tabelas da `Steinway`, e a `Steinway_Staging` visaria ter tabelas com esses mesmos nomes.
+O impedimento começou aí: A tabela `Steinway.Departaments` criaria erradamente a `Steinway_Staging.Departaments`.
+
+Problema ainda maior:
+  - Se o nome do ficheiro fosse `CreateTableDepartments.sql`, não seguiria a convenção de ter o nome da BD **original**.
+  - Se o nome do ficheiro fosse `CreateTableDepartaments.sql`, seguiria a convenção mas:
+    - Se os conteúdos da criação da tabela fossem `Departaments`, estaria a continuar o erro da BD **original**.
+    - Se os conteúdos da criação da tabela fossem `Departments`, a variável `User::TableName` seria `Departaments` (valor extraído do nome do ficheiro) e a inserção de dados não funcionaria.
+
+### Solução
+
+No container **Foreach Loop** para a inserção de dados, são atribuidos valores através do **Expression Task** que tem a seguinte expressão:
+
+```
+"IF EXISTS (SELECT * FROM Steinway.sys.tables WHERE name = '" + @[User::TableName] + "')
+ BEGIN
+    INSERT INTO [Steinway_Staging].[dbo].[" + REPLACE(@[User::TableName], "Departaments", "Departments") + "]
+    SELECT * FROM [Steinway].[dbo].[" + @[User::TableName] + "]
+END"  
+```
+
+Note-se que a variável `User::TableName` é usada várias vezes, mas apenas numa ocurrência se faz um `REPLACE(..., "Departaments", "Departments")`. Isto explica-se da seguinte forma:
+Querendo ler a tabela `Steinway.Departaments` e inserir na `Steinway_Staging.Departments`, o valor de `User::TableName` continua a ser o nome da tabela da BD **Original**, então é necessário mudar o valor na tabela de destino.
+
+Explicação visual:
+```sql
+-- @[User::TableName]                                         = "Departaments"
+-- REPLACE(@[User::TableName], "Departaments", "Departments") = "Departments"
+
+IF EXISTS (SELECT * FROM Steinway.sys.tables WHERE name = 'Departaments')
+ BEGIN
+    INSERT INTO [Steinway_Staging].[dbo].[Departments]
+    SELECT * FROM [Steinway].[dbo].[Departaments]
+END  
+```
+
+Durante este processo, reparei também que as tabelas dimensionais estavam bastante incompletas e até mesmo erradas, com menos atributos do que a própria **Staging**. Foram alterados os scripts de criação da **DataMart** para estarem de acordo com a seguinte fórmula:
+$$
+\text{Nº atributos DimTable} >= \text{Nº atributos StagingTable} + 4
+$$
+
+Onde o valor 4 da fórmula refere-se ao número de atributos convencionais das tabelas dimensionais:
+  - `<model>`Key
+  - EffectiveDate
+  - ExpiredDate
+  - isCurrent

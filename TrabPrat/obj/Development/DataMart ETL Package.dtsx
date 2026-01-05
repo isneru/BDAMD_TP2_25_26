@@ -11,11 +11,23 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="DataMart ETL Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="46"
-  DTS:VersionGUID="{AC612174-A721-40FB-978D-DDA6E77CDAB6}">
+  DTS:VersionBuild="65"
+  DTS:VersionGUID="{32DDD0AC-AB46-4A56-A7D9-AC6BA7E0435C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[(local).Steinway]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BA88910A-1045-4E21-AD1F-49A0D3A058CC}"
+      DTS:ObjectName="(local).Steinway">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=(local);Initial Catalog=Steinway;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-DataMart ETL Package-{BA88910A-1045-4E21-AD1F-49A0D3A058CC}(local).Steinway;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Create DataMart Tables]"
       DTS:CreationName="FILE"
@@ -795,7 +807,7 @@
       DTS:CreationName=""
       DTS:DTSID="{22DE83CB-2428-4D7D-8AA2-8B327B1D750A}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;IF EXISTS (SELECT * FROM Steinway.sys.tables WHERE name = '&quot; + @[User::TableName] + &quot;')&#xA; BEGIN&#xA;    INSERT INTO [Steinway_Staging].[dbo].[&quot; + @[User::TableName] + &quot;]&#xA;    SELECT * FROM [Steinway].[dbo].[&quot; + @[User::TableName] + &quot;]&#xA; END&quot;"
+      DTS:Expression="&quot;IF EXISTS (SELECT * FROM Steinway.sys.tables WHERE name = '&quot; + @[User::TableName] + &quot;')&#xA; BEGIN&#xA;    INSERT INTO [Steinway_Staging].[dbo].[&quot; + REPLACE(@[User::TableName], &quot;Departaments&quot;, &quot;Departments&quot;) + &quot;]&#xA;    SELECT * FROM [Steinway].[dbo].[&quot; + @[User::TableName] + &quot;]&#xA; END&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="SQL_Insert">
@@ -2553,11 +2565,11 @@
         <NodeLayout
           Size="156,42"
           Id="Package\Create DataMart"
-          TopLeft="743.5,121" />
+          TopLeft="745.5,122" />
         <NodeLayout
           Size="165,42"
           Id="Package\Create Staging DB"
-          TopLeft="327.833333333333,137.5" />
+          TopLeft="327.833333333333,117.5" />
         <NodeLayout
           Size="226,42"
           Id="Package\Foreach Create DataMart Table\Execute DataMart Create Script"
@@ -2572,14 +2584,14 @@
         <NodeLayout
           Size="218,42"
           Id="Package\Foreach Create Staging Table\Execute Staging Create Script"
-          TopLeft="39,43" />
+          TopLeft="39.8333333333333,58.0000000000001" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="292,140"
-          Size="292,183"
+          PanelSize="299,195"
+          Size="299,238"
           Id="Package\Foreach Create Staging Table"
-          TopLeft="269.333333333333,230" />
+          TopLeft="264.333333333333,210" />
         <NodeLayout
           Size="243,42"
           Id="Package\Foreach Steinway original Table\Get TableName by Script FileName"
@@ -2587,21 +2599,21 @@
         <NodeLayout
           Size="305,42"
           Id="Package\Foreach Steinway original Table\Select from original table and insert into staging"
-          TopLeft="28.8333333333333,113.333333333333" />
+          TopLeft="27.8333333333333,113.333333333333" />
         <EdgeLayout
           Id="Package\Foreach Steinway original Table.PrecedenceConstraints[Constraint]"
-          TopLeft="182.916666666667,67">
+          TopLeft="182.416666666667,67">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46.3333333333334"
+              EndConnector="0,46.333333333333"
               Start="0,0"
-              End="0,38.8333333333334">
+              End="0,38.833333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.8333333333334" />
+                    End="0,38.833333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2613,18 +2625,18 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="373,189"
-          Size="373,232"
+          PanelSize="373,210"
+          Size="373,253"
           Id="Package\Foreach Steinway original Table"
-          TopLeft="232.333333333333,465" />
-        <NodeLayout
-          Size="146,42"
-          Id="Package\Load Temporal Dimension\Load DimDate"
-          TopLeft="56,112" />
+          TopLeft="233.166666666666,475.833333333333" />
         <NodeLayout
           Size="169,42"
           Id="Package\Load Temporal Dimension\Is DimDate empty?"
           TopLeft="50.5,21.5" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Load Temporal Dimension\Load DimDate"
+          TopLeft="56,112" />
         <EdgeLayout
           Id="Package\Load Temporal Dimension.PrecedenceConstraints[Constraint]"
           TopLeft="132,63.5">
@@ -2655,21 +2667,21 @@
           PanelSize="249,209"
           Size="249,252"
           Id="Package\Load Temporal Dimension"
-          TopLeft="700,449" />
+          TopLeft="698.571428571429,449" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="417.083333333333,413">
+          TopLeft="416.749999999999,448">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,52"
+              EndConnector="0,27.833333333333"
               Start="0,0"
-              End="0,44.5">
+              End="0,20.333333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.5" />
+                    End="0,20.333333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2680,7 +2692,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="412.833333333333,179.5">
+          TopLeft="412.083333333333,159.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2702,18 +2714,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1 1]"
-          TopLeft="822.25,163">
+          TopLeft="823.25,164">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,56.5"
+              EndConnector="0,55.5"
               Start="0,0"
-              End="0,49">
+              End="0,48">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,49" />
+                    End="0,48" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2724,7 +2736,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="823.75,411.5">
+          TopLeft="823.035714285714,411.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2748,61 +2760,10 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Load Temporal Dimension\Load DimDate">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="142,42"
-          Id="Package\Load Temporal Dimension\Load DimDate\CSV DimDate"
-          TopLeft="363,161" />
-        <NodeLayout
-          Size="120,42"
-          Id="Package\Load Temporal Dimension\Load DimDate\DimDate"
-          TopLeft="370.5,257" />
-        <EdgeLayout
-          Id="Package\Load Temporal Dimension\Load DimDate.Paths[Flat File Source Output]"
-          TopLeft="432.25,203">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54"
-              Start="0,0"
-              End="0,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Temporal Dimension\Load DimDate\DimDate">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
     design-time-name="Package\Load Temporal Dimension\Is DimDate empty?">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="120,42"
           Id="Package\Load Temporal Dimension\Is DimDate empty?\DimDate"
@@ -2830,7 +2791,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2838,6 +2801,59 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Load Temporal Dimension\Is DimDate empty?\DimDate">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load Temporal Dimension\Load DimDate">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="120,42"
+          Id="Package\Load Temporal Dimension\Load DimDate\DimDate"
+          TopLeft="370.5,257" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\Load Temporal Dimension\Load DimDate\CSV DimDate"
+          TopLeft="363,161" />
+        <EdgeLayout
+          Id="Package\Load Temporal Dimension\Load DimDate.Paths[Flat File Source Output]"
+          TopLeft="432.25,203">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Temporal Dimension\Load DimDate\DimDate">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
