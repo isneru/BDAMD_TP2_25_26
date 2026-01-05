@@ -103,12 +103,19 @@ END
 Durante este processo, reparei também que as tabelas dimensionais estavam bastante incompletas e até mesmo erradas, com menos atributos do que a própria **Staging**. Foram alterados os scripts de criação da **DataMart** para estarem de acordo com a seguinte fórmula:
 
 ```sql
-numAttrsDimTable >= numAttrsStagingTable + 4
+numAttrsDimTable >= numAttrsStagingTable + 3
 ```
 
-Onde o valor 4 da fórmula refere-se ao número de atributos convencionais das tabelas dimensionais:
+Onde o valor ~~4~~ 3 da fórmula refere-se ao número de atributos convencionais das tabelas dimensionais:
 
 - `<model>`Key
 - EffectiveDate
 - ExpiredDate
-- isCurrent
+- ~~isCurrent~~ (`isCurrent` é desnecessário, pois a informação está presente ao analisar a tabela. Se `ExpiredDate == NULL`, indica que é a versão mais recente)
+
+---
+
+## Exercício 4 - Primeira Inserção
+
+Para concretizar a operação presente, achei correto modificar os nomes das **Business Keys** (BK) para `<model_name>ID` para uma maior compreensão dos Modelos.
+Seguindo a onda de "otimização superficial", decidi mudar todos os atributos com tipo `nvarchar` para `varchar` para evitar fazer conversões (string -> Unicode string) durante o processo de **Transformation**.

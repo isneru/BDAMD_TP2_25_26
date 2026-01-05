@@ -1,4 +1,4 @@
-IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'FactSales')	
+IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'FactSales')
 BEGIN
     CREATE TABLE [dbo].[FactSales](
         [SalesKey] [bigint] IDENTITY(1,1) NOT NULL,

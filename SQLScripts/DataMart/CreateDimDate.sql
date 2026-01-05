@@ -7,13 +7,13 @@ BEGIN
         [Semester] [tinyint] NOT NULL,
         [Quarter] [tinyint] NOT NULL,
         [Month] [tinyint] NOT NULL,
-        [MonthName] [nvarchar](10) NOT NULL,
+        [MonthName] [varchar](10) NOT NULL,
         [Week] [tinyint] NOT NULL,
         [DayNumberOfYear] [int] NOT NULL,
         [DayNumberOfMonth] [tinyint] NOT NULL,
         [DayNumberOfWeek] [tinyint] NOT NULL,
-        [DayOfWeek] [nvarchar](10) NOT NULL,
-        [Weekend] [nvarchar](3) NOT NULL,
+        [DayOfWeek] [varchar](10) NOT NULL,
+        [Weekend] [varchar](3) NOT NULL,
         CONSTRAINT [PK_DimDate] PRIMARY KEY CLUSTERED ([DateKey] ASC)
     ) ON [PRIMARY]
 END
