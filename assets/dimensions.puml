@@ -26,67 +26,64 @@ entity "DimDate" as date {
   Semester: tinyint
   Quarter: tinyint
   Month: tinyint
-  MonthName: nvarchar(10)
+  MonthName: varchar(10)
   Week: tinyint
   DayNumberOfYear: int
   DayNumberOfMonth: tinyint
   DayNumberOfWeek: tinyint
-  DayOfWeek: nvarchar(10)
-  Weekend: nvarchar(3)
+  DayOfWeek: varchar(10)
+  Weekend: varchar(3)
 }
 
 entity "DimProduct" as prod {
   *ProductKey : int <<PK>>
   --
-  ProductCode : char(18)
-  ProductDescription : nvarchar(60)
-  FamilyName : nvarchar(60)
+  ProductID : char(18)
+  Description : varchar(60)
+  FamilyName : varchar(60)
   Stock : numeric(13, 3)
   UnitPrice : numeric(19, 6)
   OrderPoint : numeric(10, 3)
   MinimumStock : numeric(13, 3)
   StartSellingDate : date
-  Category : nvarchar(25)
+  Category : varchar(25)
   EffectiveDate : datetime
   ExpiredDate : datetime
-  IsCurrent : bit
 }
 
 entity "DimCustomer" as cust {
   *CustomerKey : int <<PK>>
   --
-  CustomerNumber : numeric(10, 0)
-  Name : nvarchar(55)
-  TaxpayerNumber : nvarchar(20)
-  Fax : nvarchar(60)
-  Phone : nvarchar(60)
-  Contact : nvarchar(30)
-  Address : nvarchar(55)
-  ZipCode : nvarchar(10)
-  City : nvarchar(33)
-  Location : nvarchar(43)
-  CustomerType : nvarchar(20)
-  Email : nvarchar(45)
+  CustomerID : numeric(10, 0)
+  Name : varchar(55)
+  TaxpayerNumber : varchar(20)
+  Fax : varchar(60)
+  Phone : varchar(60)
+  Contact : varchar(30)
+  Address : varchar(55)
+  ZipCode : varchar(10)
+  City : varchar(33)
+  Location : varchar(43)
+  Type : varchar(20)
+  Email : varchar(45)
   EffectiveDate : datetime
   ExpiredDate : datetime
-  IsCurrent : bit
 }
 
 entity "DimEmployee" as emp {
   *EmployeeKey : int <<PK>>
   --
-  EmployeeNumber : numeric(6, 0)
-  Initials : nvarchar(3)
-  Code : nvarchar(20)
-  Forename : nvarchar(50)
-  Surname : nvarchar(50)
-  FullName : nvarchar(100)
-  Group : nvarchar(20)
-  DepartmentName : nvarchar(50)
-  Email : nvarchar(100)
+  EmployeeID : numeric(6, 0)
+  Initials : varchar(3)
+  Code : varchar(20)
+  Forename : varchar(50)
+  Surname : varchar(50)
+  FullName : varchar(100)
+  Group : varchar(20)
+  DepartmentName : varchar(50)
+  Email : varchar(100)
   EffectiveDate : datetime
   ExpiredDate : datetime
-  IsCurrent : bit
 }
 
 fact }|-up-|| date

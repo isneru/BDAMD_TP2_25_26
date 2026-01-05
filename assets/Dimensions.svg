@@ -1,256 +1,252 @@
 <?xml version="1.0" encoding="us-ascii" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  contentStyleType="text/css" height="982px" preserveAspectRatio="none"
-  style="width:813px;height:982px;background:#FFFFFF;" version="1.1" viewBox="0 0 813 982"
-  width="813px" zoomAndPan="magnify">
+  contentStyleType="text/css" height="948px" preserveAspectRatio="none"
+  style="width:775px;height:948px;background:#FFFFFF;" version="1.1" viewBox="0 0 775 948"
+  width="775px" zoomAndPan="magnify">
   <defs />
   <g><!--class
     fact-->
     <g id="elem_fact">
       <rect codeLine="5" fill="#FFFFFF" height="221.1611" id="fact" rx="2.5" ry="2.5"
-        style="stroke:#000000;stroke-width:1.0;" width="223" x="303.5" y="383" />
+        style="stroke:#000000;stroke-width:1.0;" width="223" x="277.5" y="374.5" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="66" x="382" y="402.0752">FactSales</text>
-      <line style="stroke:#000000;stroke-width:1.0;" x1="304.5" x2="525.5" y1="410.0146"
-        y2="410.0146" />
-      <ellipse cx="314.5" cy="424.022" fill="#FFFFFF" rx="3" ry="3"
+        textLength="66" x="356" y="393.5752">FactSales</text>
+      <line style="stroke:#000000;stroke-width:1.0;" x1="278.5" x2="499.5" y1="401.5146"
+        y2="401.5146" />
+      <ellipse cx="288.5" cy="415.522" fill="#FFFFFF" rx="3" ry="3"
         style="stroke:#000000;stroke-width:1.0;" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="159" x="321.5" y="428.0898">SalesKey : bigint &#171;PK&#187;</text>
-      <line style="stroke:#000000;stroke-width:1.0;" x1="304.5" x2="525.5" y1="435.0293"
-        y2="435.0293" />
-      <ellipse cx="314.5" cy="449.0366" fill="#FFFFFF" rx="3" ry="3"
+        textLength="159" x="295.5" y="419.5898">SalesKey : bigint &#171;PK&#187;</text>
+      <line style="stroke:#000000;stroke-width:1.0;" x1="278.5" x2="499.5" y1="426.5293"
+        y2="426.5293" />
+      <ellipse cx="288.5" cy="440.5366" fill="#FFFFFF" rx="3" ry="3"
         style="stroke:#000000;stroke-width:1.0;" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="134" x="321.5" y="453.1045">DateKey : int &#171;FK&#187;</text>
-      <ellipse cx="314.5" cy="466.0513" fill="#FFFFFF" rx="3" ry="3"
+        textLength="134" x="295.5" y="444.6045">DateKey : int &#171;FK&#187;</text>
+      <ellipse cx="288.5" cy="457.5513" fill="#FFFFFF" rx="3" ry="3"
         style="stroke:#000000;stroke-width:1.0;" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="155" x="321.5" y="470.1191">ProductKey : int &#171;FK&#187;</text>
-      <ellipse cx="314.5" cy="483.0659" fill="#FFFFFF" rx="3" ry="3"
+        textLength="155" x="295.5" y="461.6191">ProductKey : int &#171;FK&#187;</text>
+      <ellipse cx="288.5" cy="474.5659" fill="#FFFFFF" rx="3" ry="3"
         style="stroke:#000000;stroke-width:1.0;" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="170" x="321.5" y="487.1338">CustomerKey : int &#171;FK&#187;</text>
-      <ellipse cx="314.5" cy="500.0806" fill="#FFFFFF" rx="3" ry="3"
+        textLength="170" x="295.5" y="478.6338">CustomerKey : int &#171;FK&#187;</text>
+      <ellipse cx="288.5" cy="491.5806" fill="#FFFFFF" rx="3" ry="3"
         style="stroke:#000000;stroke-width:1.0;" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="168" x="321.5" y="504.1484">EmployeeKey : int &#171;FK&#187;</text>
-      <line style="stroke:#000000;stroke-width:1.0;" x1="304.5" x2="525.5" y1="511.0879"
-        y2="511.0879" />
+        textLength="168" x="295.5" y="495.6484">EmployeeKey : int &#171;FK&#187;</text>
+      <line style="stroke:#000000;stroke-width:1.0;" x1="278.5" x2="499.5" y1="502.5879"
+        y2="502.5879" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="99" x="309.5" y="529.1631">InvoiceID : int</text>
+        textLength="99" x="283.5" y="520.6631">InvoiceID : int</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="117" x="309.5" y="546.1777">LineNumber : int</text>
+        textLength="117" x="283.5" y="537.6777">LineNumber : int</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="180" x="309.5" y="563.1924">Quantity : numeric(14, 4)</text>
+        textLength="180" x="283.5" y="554.6924">Quantity : numeric(14, 4)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="180" x="309.5" y="580.207">UnitPrice : numeric(19, 6)</text>
+        textLength="180" x="283.5" y="571.707">UnitPrice : numeric(19, 6)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="211" x="309.5" y="597.2217">TotalAmount : numeric(19, 6)</text>
+        textLength="211" x="283.5" y="588.7217">TotalAmount : numeric(19, 6)</text>
     </g><!--class
     date-->
     <g id="elem_date">
       <rect codeLine="20" fill="#FFFFFF" height="264.2051" id="date" rx="2.5" ry="2.5"
-        style="stroke:#000000;stroke-width:1.0;" width="209" x="310.5" y="12" />
+        style="stroke:#000000;stroke-width:1.0;" width="209" x="284.5" y="12" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="60" x="385" y="31.0752">DimDate</text>
-      <line style="stroke:#000000;stroke-width:1.0;" x1="311.5" x2="518.5" y1="39.0146" y2="39.0146" />
-      <ellipse cx="321.5" cy="53.022" fill="#FFFFFF" rx="3" ry="3"
+        textLength="60" x="359" y="31.0752">DimDate</text>
+      <line style="stroke:#000000;stroke-width:1.0;" x1="285.5" x2="492.5" y1="39.0146" y2="39.0146" />
+      <ellipse cx="295.5" cy="53.022" fill="#FFFFFF" rx="3" ry="3"
         style="stroke:#000000;stroke-width:1.0;" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="129" x="328.5" y="57.0898">DateKey: int &#171;PK&#187;</text>
-      <line style="stroke:#000000;stroke-width:1.0;" x1="311.5" x2="518.5" y1="64.0293" y2="64.0293" />
+        textLength="129" x="302.5" y="57.0898">DateKey: int &#171;PK&#187;</text>
+      <line style="stroke:#000000;stroke-width:1.0;" x1="285.5" x2="492.5" y1="64.0293" y2="64.0293" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="128" x="316.5" y="82.1045">FullDate: datetime</text>
+        textLength="128" x="290.5" y="82.1045">FullDate: datetime</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="60" x="316.5" y="99.1191">Year: int</text>
+        textLength="60" x="290.5" y="99.1191">Year: int</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="122" x="316.5" y="116.1338">Semester: tinyint</text>
+        textLength="122" x="290.5" y="116.1338">Semester: tinyint</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="109" x="316.5" y="133.1484">Quarter: tinyint</text>
+        textLength="109" x="290.5" y="133.1484">Quarter: tinyint</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="99" x="316.5" y="150.1631">Month: tinyint</text>
+        textLength="99" x="290.5" y="150.1631">Month: tinyint</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="185" x="316.5" y="167.1777">MonthName: nvarchar(10)</text>
+        textLength="176" x="290.5" y="167.1777">MonthName: varchar(10)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="94" x="316.5" y="184.1924">Week: tinyint</text>
+        textLength="94" x="290.5" y="184.1924">Week: tinyint</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="158" x="316.5" y="201.207">DayNumberOfYear: int</text>
+        textLength="158" x="290.5" y="201.207">DayNumberOfYear: int</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="197" x="316.5" y="218.2217">DayNumberOfMonth: tinyint</text>
+        textLength="197" x="290.5" y="218.2217">DayNumberOfMonth: tinyint</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="192" x="316.5" y="235.2363">DayNumberOfWeek: tinyint</text>
+        textLength="192" x="290.5" y="235.2363">DayNumberOfWeek: tinyint</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="184" x="316.5" y="252.251">DayOfWeek: nvarchar(10)</text>
+        textLength="175" x="290.5" y="252.251">DayOfWeek: varchar(10)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="158" x="316.5" y="269.2656">Weekend: nvarchar(3)</text>
+        textLength="149" x="290.5" y="269.2656">Weekend: varchar(3)</text>
     </g><!--class
     prod-->
     <g id="elem_prod">
-      <rect codeLine="37" fill="#FFFFFF" height="264.2051" id="prod" rx="2.5" ry="2.5"
-        style="stroke:#000000;stroke-width:1.0;" width="252" x="289" y="711" />
+      <rect codeLine="37" fill="#FFFFFF" height="247.1904" id="prod" rx="2.5" ry="2.5"
+        style="stroke:#000000;stroke-width:1.0;" width="233" x="272.5" y="694" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="81" x="374.5" y="730.0752">DimProduct</text>
-      <line style="stroke:#000000;stroke-width:1.0;" x1="290" x2="540" y1="738.0146" y2="738.0146" />
-      <ellipse cx="300" cy="752.022" fill="#FFFFFF" rx="3" ry="3"
+        textLength="81" x="348.5" y="713.0752">DimProduct</text>
+      <line style="stroke:#000000;stroke-width:1.0;" x1="273.5" x2="504.5" y1="721.0146"
+        y2="721.0146" />
+      <ellipse cx="283.5" cy="735.022" fill="#FFFFFF" rx="3" ry="3"
         style="stroke:#000000;stroke-width:1.0;" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="155" x="307" y="756.0898">ProductKey : int &#171;PK&#187;</text>
-      <line style="stroke:#000000;stroke-width:1.0;" x1="290" x2="540" y1="763.0293" y2="763.0293" />
+        textLength="155" x="290.5" y="739.0898">ProductKey : int &#171;PK&#187;</text>
+      <line style="stroke:#000000;stroke-width:1.0;" x1="273.5" x2="504.5" y1="746.0293"
+        y2="746.0293" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="166" x="295" y="781.1045">ProductCode : char(18)</text>
+        textLength="146" x="278.5" y="764.1045">ProductID : char(18)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="240" x="295" y="798.1191">ProductDescription : nvarchar(60)</text>
+        textLength="177" x="278.5" y="781.1191">Description : varchar(60)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="189" x="295" y="815.1338">FamilyName : nvarchar(60)</text>
+        textLength="180" x="278.5" y="798.1338">FamilyName : varchar(60)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="160" x="295" y="832.1484">Stock : numeric(13, 3)</text>
+        textLength="160" x="278.5" y="815.1484">Stock : numeric(13, 3)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="180" x="295" y="849.1631">UnitPrice : numeric(19, 6)</text>
+        textLength="180" x="278.5" y="832.1631">UnitPrice : numeric(19, 6)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="195" x="295" y="866.1777">OrderPoint : numeric(10, 3)</text>
+        textLength="195" x="278.5" y="849.1777">OrderPoint : numeric(10, 3)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="221" x="295" y="883.1924">MinimumStock : numeric(13, 3)</text>
+        textLength="221" x="278.5" y="866.1924">MinimumStock : numeric(13, 3)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="161" x="295" y="900.207">StartSellingDate : date</text>
+        textLength="161" x="278.5" y="883.207">StartSellingDate : date</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="171" x="295" y="917.2217">Category : nvarchar(25)</text>
+        textLength="162" x="278.5" y="900.2217">Category : varchar(25)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="169" x="295" y="934.2363">EffectiveDate : datetime</text>
+        textLength="169" x="278.5" y="917.2363">EffectiveDate : datetime</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="163" x="295" y="951.251">ExpiredDate : datetime</text>
-      <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="101" x="295" y="968.2656">IsCurrent : bit</text>
+        textLength="163" x="278.5" y="934.251">ExpiredDate : datetime</text>
     </g><!--class
     cust-->
     <g id="elem_cust">
-      <rect codeLine="54" fill="#FFFFFF" height="315.249" id="cust" rx="2.5" ry="2.5"
-        style="stroke:#000000;stroke-width:1.0;" width="256" x="12" y="336" />
+      <rect codeLine="53" fill="#FFFFFF" height="298.2344" id="cust" rx="2.5" ry="2.5"
+        style="stroke:#000000;stroke-width:1.0;" width="230" x="12" y="336" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="96" x="92" y="355.0752">DimCustomer</text>
-      <line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="267" y1="363.0146" y2="363.0146" />
+        textLength="96" x="79" y="355.0752">DimCustomer</text>
+      <line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="241" y1="363.0146" y2="363.0146" />
       <ellipse cx="23" cy="377.022" fill="#FFFFFF" rx="3" ry="3"
         style="stroke:#000000;stroke-width:1.0;" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
         textLength="170" x="30" y="381.0898">CustomerKey : int &#171;PK&#187;</text>
-      <line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="267" y1="388.0293" y2="388.0293" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="241" y1="388.0293" y2="388.0293" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="244" x="18" y="406.1045">CustomerNumber : numeric(10, 0)</text>
+        textLength="205" x="18" y="406.1045">CustomerID : numeric(10, 0)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="146" x="18" y="423.1191">Name : nvarchar(55)</text>
+        textLength="137" x="18" y="423.1191">Name : varchar(55)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="227" x="18" y="440.1338">TaxpayerNumber : nvarchar(20)</text>
+        textLength="218" x="18" y="440.1338">TaxpayerNumber : varchar(20)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="132" x="18" y="457.1484">Fax : nvarchar(60)</text>
+        textLength="123" x="18" y="457.1484">Fax : varchar(60)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="150" x="18" y="474.1631">Phone : nvarchar(60)</text>
+        textLength="141" x="18" y="474.1631">Phone : varchar(60)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="162" x="18" y="491.1777">Contact : nvarchar(30)</text>
+        textLength="153" x="18" y="491.1777">Contact : varchar(30)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="165" x="18" y="508.1924">Address : nvarchar(55)</text>
+        textLength="156" x="18" y="508.1924">Address : varchar(55)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="165" x="18" y="525.207">ZipCode : nvarchar(10)</text>
+        textLength="156" x="18" y="525.207">ZipCode : varchar(10)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="134" x="18" y="542.2217">City : nvarchar(33)</text>
+        textLength="125" x="18" y="542.2217">City : varchar(33)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="166" x="18" y="559.2363">Location : nvarchar(43)</text>
+        textLength="157" x="18" y="559.2363">Location : varchar(43)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="210" x="18" y="576.251">CustomerType : nvarchar(20)</text>
+        textLength="132" x="18" y="576.251">Type : varchar(20)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="143" x="18" y="593.2656">Email : nvarchar(45)</text>
+        textLength="134" x="18" y="593.2656">Email : varchar(45)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
         textLength="169" x="18" y="610.2803">EffectiveDate : datetime</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
         textLength="163" x="18" y="627.2949">ExpiredDate : datetime</text>
-      <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="101" x="18" y="644.3096">IsCurrent : bit</text>
     </g><!--class
     emp-->
     <g id="elem_emp">
-      <rect codeLine="74" fill="#FFFFFF" height="264.2051" id="emp" rx="2.5" ry="2.5"
-        style="stroke:#000000;stroke-width:1.0;" width="245" x="561.5" y="361.5" />
+      <rect codeLine="72" fill="#FFFFFF" height="247.1904" id="emp" rx="2.5" ry="2.5"
+        style="stroke:#000000;stroke-width:1.0;" width="233" x="535.5" y="361.5" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="94" x="637" y="380.5752">DimEmployee</text>
-      <line style="stroke:#000000;stroke-width:1.0;" x1="562.5" x2="805.5" y1="388.5146"
+        textLength="94" x="605" y="380.5752">DimEmployee</text>
+      <line style="stroke:#000000;stroke-width:1.0;" x1="536.5" x2="767.5" y1="388.5146"
         y2="388.5146" />
-      <ellipse cx="572.5" cy="402.522" fill="#FFFFFF" rx="3" ry="3"
+      <ellipse cx="546.5" cy="402.522" fill="#FFFFFF" rx="3" ry="3"
         style="stroke:#000000;stroke-width:1.0;" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="168" x="579.5" y="406.5898">EmployeeKey : int &#171;PK&#187;</text>
-      <line style="stroke:#000000;stroke-width:1.0;" x1="562.5" x2="805.5" y1="413.5293"
+        textLength="168" x="553.5" y="406.5898">EmployeeKey : int &#171;PK&#187;</text>
+      <line style="stroke:#000000;stroke-width:1.0;" x1="536.5" x2="767.5" y1="413.5293"
         y2="413.5293" />
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="233" x="567.5" y="431.6045">EmployeeNumber : numeric(6, 0)</text>
+        textLength="194" x="541.5" y="431.6045">EmployeeID : numeric(6, 0)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="143" x="567.5" y="448.6191">Initials : nvarchar(3)</text>
+        textLength="134" x="541.5" y="448.6191">Initials : varchar(3)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="143" x="567.5" y="465.6338">Code : nvarchar(20)</text>
+        textLength="134" x="541.5" y="465.6338">Code : varchar(20)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="176" x="567.5" y="482.6484">Forename : nvarchar(50)</text>
+        textLength="167" x="541.5" y="482.6484">Forename : varchar(50)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="170" x="567.5" y="499.6631">Surname : nvarchar(50)</text>
+        textLength="161" x="541.5" y="499.6631">Surname : varchar(50)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="178" x="567.5" y="516.6777">FullName : nvarchar(100)</text>
+        textLength="169" x="541.5" y="516.6777">FullName : varchar(100)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="151" x="567.5" y="533.6924">Group : nvarchar(20)</text>
+        textLength="142" x="541.5" y="533.6924">Group : varchar(20)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="230" x="567.5" y="550.707">DepartmentName : nvarchar(50)</text>
+        textLength="221" x="541.5" y="550.707">DepartmentName : varchar(50)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="152" x="567.5" y="567.7217">Email : nvarchar(100)</text>
+        textLength="143" x="541.5" y="567.7217">Email : varchar(100)</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="169" x="567.5" y="584.7363">EffectiveDate : datetime</text>
+        textLength="169" x="541.5" y="584.7363">EffectiveDate : datetime</text>
       <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="163" x="567.5" y="601.751">ExpiredDate : datetime</text>
-      <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing"
-        textLength="101" x="567.5" y="618.7656">IsCurrent : bit</text>
+        textLength="163" x="541.5" y="601.751">ExpiredDate : datetime</text>
     </g><!--link
     date to fact-->
     <g id="link_date_fact">
-      <path codeLine="91" d="M415,284.13 C415,319.31 415,340.95 415,374.85 " fill="none"
+      <path codeLine="88" d="M389,284.33 C389,316.72 389,335.04 389,366.3 " fill="none"
         id="date-fact" style="stroke:#000000;stroke-width:1.0;" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="411" x2="419" y1="280.13" y2="280.13" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="411" x2="419" y1="283.13" y2="283.13" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="415" x2="415" y1="284.13" y2="276.13" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="415" x2="421" y1="374.85" y2="382.85" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="415" x2="409" y1="374.85" y2="382.85" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="415" x2="415" y1="374.85" y2="382.85" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="419" x2="411" y1="372.85" y2="372.85" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="385" x2="393" y1="280.33" y2="280.33" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="385" x2="393" y1="283.33" y2="283.33" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="389" x2="389" y1="284.33" y2="276.33" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="389" x2="395" y1="366.3" y2="374.3" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="389" x2="383" y1="366.3" y2="374.3" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="389" x2="389" y1="366.3" y2="374.3" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="393" x2="385" y1="364.3" y2="364.3" />
     </g><!--link
     fact to prod-->
     <g id="link_fact_prod">
-      <path codeLine="92" d="M415,612.08 C415,645.98 415,667.62 415,702.81 " fill="none"
+      <path codeLine="89" d="M389,603.72 C389,635.17 389,653.62 389,685.79 " fill="none"
         id="fact-prod" style="stroke:#000000;stroke-width:1.0;" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="415" x2="409" y1="612.08" y2="604.08" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="415" x2="421" y1="612.08" y2="604.08" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="415" x2="415" y1="612.08" y2="604.08" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="411" x2="419" y1="614.08" y2="614.08" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="419" x2="411" y1="706.81" y2="706.81" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="419" x2="411" y1="703.81" y2="703.81" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="415" x2="415" y1="702.81" y2="710.81" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="389" x2="383" y1="603.72" y2="595.72" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="389" x2="395" y1="603.72" y2="595.72" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="389" x2="389" y1="603.72" y2="595.72" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="385" x2="393" y1="605.72" y2="605.72" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="393" x2="385" y1="689.79" y2="689.79" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="393" x2="385" y1="686.79" y2="686.79" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="389" x2="389" y1="685.79" y2="693.79" />
     </g><!--link
     cust to fact-->
     <g id="link_cust_fact">
-      <path codeLine="93" d="M276.24,494 C288,494 283.86,494 295.45,494 " fill="none" id="cust-fact"
-        style="stroke:#000000;stroke-width:1.0;" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="272.24" x2="272.24" y1="498" y2="490" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="275.24" x2="275.24" y1="498" y2="490" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="276.24" x2="268.24" y1="494" y2="494" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="295.45" x2="303.45" y1="494" y2="488" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="295.45" x2="303.45" y1="494" y2="500" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="295.45" x2="303.45" y1="494" y2="494" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="293.45" x2="293.45" y1="490" y2="498" />
+      <path codeLine="90" d="M250.3,485 C261.97,485 257.81,485 269.44,485 " fill="none"
+        id="cust-fact" style="stroke:#000000;stroke-width:1.0;" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="246.3" x2="246.3" y1="489" y2="481" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="249.3" x2="249.3" y1="489" y2="481" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="250.3" x2="242.3" y1="485" y2="485" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="269.44" x2="277.44" y1="485" y2="479" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="269.44" x2="277.44" y1="485" y2="491" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="269.44" x2="277.44" y1="485" y2="485" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="267.44" x2="267.44" y1="481" y2="489" />
     </g><!--link
     fact to emp-->
     <g id="link_fact_emp">
-      <path codeLine="94" d="M534.74,494 C546.15,494 541.78,494 553.29,494 " fill="none"
+      <path codeLine="91" d="M508.54,485 C520.02,485 515.7,485 527.24,485 " fill="none"
         id="fact-emp" style="stroke:#000000;stroke-width:1.0;" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="534.74" x2="526.74" y1="494" y2="500" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="534.74" x2="526.74" y1="494" y2="488" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="534.74" x2="526.74" y1="494" y2="494" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="536.74" x2="536.74" y1="498" y2="490" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="557.29" x2="557.29" y1="490" y2="498" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="554.29" x2="554.29" y1="490" y2="498" />
-      <line style="stroke:#000000;stroke-width:1.0;" x1="553.29" x2="561.29" y1="494" y2="494" />
-    </g><!--SRC=[jLNRJjmm47tVht1v0iHAK2vg4K92UwbMtBPQggfzCydiPeGlaUDG8k3VExQJO99KVMcVTdDEFECvPsRomMOWWUM2enfbc09Bq2G2HiK3gfmRBfb01RRAWMbZCpqQWR9eAxOrvubTSG755kC5MzCJUnunjkknIwZOARl73IhBpiwMb-Vdn8t7xeKfjn3uGCu3kRiqEYqJEqHDoi9g2MQ8cybSw0g6Glfy2_MeCO75DB24N555DwMy1zD2NqiUoZfbggH4c6mV7EsnentYlYcqIq8W9Z_liHD7tcdBnONK9UNjqQzlQarHkhgzLYdz2LhLKZJNZcMQbq8u-jI_Rb42WJ-0c-RAApAki43F5bNLbc4wqBLMDki1DrnIPFN8JP9nitsmxshv3l0GlpdbLP3fTXqdZk1Uy8WRYDQ00tb1fH5-sDMkxWqlNqx_Wtm37HDBMDCJdJhhGi9FEs_458h4O6vHAnObF_6NcdE9ed8wzRcLrSb3RFVX7ZlyQwlScXJCKkFxJjclZrwZGbdAFuPUMR9s1OB6SUFwWeN686P2FnjjglYU7u_TcTbw3Od5HuWEr9qqUyhHGDed5iMaD0Ry9U_HTdne1j4RaT13C69eFcCd6hwTkhXyBsbNw6DVm1r_odaLdsiBh4rwwhkppBGQC6r2lUgMLDncdhX8KmD5qS_-4_EwTpeDEwatHHl7EtIb4zxjfIFFDENVkJNQAs8cEOftX_wJUSsczEQ1p8DtG_ipzgxXUzwTrDOjgEcHYtS2Xh8xujMUQRfWr-qmLgKP9jmkx3R8mRwdlXXTvlqaKw2FbvLK_CrWn9xcTRX_9Bh_6hw-ZCjy_F8IvhI1KlrBET1jiHOKiBOET1FLWWOtcKV9gjy0]-->
+      <line style="stroke:#000000;stroke-width:1.0;" x1="508.54" x2="500.54" y1="485" y2="491" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="508.54" x2="500.54" y1="485" y2="479" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="508.54" x2="500.54" y1="485" y2="485" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="510.54" x2="510.54" y1="489" y2="481" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="531.24" x2="531.24" y1="481" y2="489" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="528.24" x2="528.24" y1="481" y2="489" />
+      <line style="stroke:#000000;stroke-width:1.0;" x1="527.24" x2="535.24" y1="485" y2="485" />
+    </g><!--SRC=[hLNRQjj047ttLsppb8OOd3enhGc1ODd5vEPYbzA-RQInDMGlOhLA8vhyU_SYoMj9fL3w9EqvgvcTSsPMxtGA74Z6A8f1YWcG65NCO90_eSYeefmm5A3B38XKEfM30GYDkYH72nhhDMMG7n6QawrPaLy3GauSTWCbcP97tA7GvF9oTNDrPRZXq6w8g0RFUtBXoPELaaaHwpvgLkHQSb1zt9ndJ9RG5zBbMufdYJ4i8yyQvDPKT5_mHr0DzAMWlgmf4OL9XF7nsVafENzlkAy2zSeW49AVJid4aXkfARlciZ1vE_JRNgq8kQtRQPMO5wzL9KLzx52cHS6OfQTkkqOE1lmELDL7NXlZSWrchL6KJHcg1Tr9eTCES4-vYVnCLPnITNmsigLy0tWADqQqz2ezRCEy0To97N0zqMgmcnP4ieV7RU6gnd3QPURTQzVJBg5-5Urizza-scmHvB72JACKP9zouawoe1nPQQNfK6ijuwVGuF4f6V-rEHvK0cebyR0tHjMdToYG5_oFeTVQcBa6PWPmPpk1-5OmpCmyTbALmJ4_NDXFvjijn1gV8TXVjSxy9KC5IPiuLBgUCoTrR1PUwhxn2xMkUITsMAVJhYNeXJlfXhvaj0JLp65JI6N5IyU3LIf5rvcPwK5xzmJzu_3h956Gvvt4Fp2RoIICuzjmvgU_2U8ik9KnRRNAkICsza9i7thEAR9mwt_nfBxVd2V0Csz9twqNMbBp1vPCAaUMfccHib2SiTSowLQra0f4oq8_4uNgnUtDrVByREIOpqeMMIT11EP7exaf-RulN5lLAjO_oUh-Kc-lmo8RlhxwQQgXHFuK5hGNJ0Cos6eBsb5eG8MxrA76ZDy0]-->
   </g>
 </svg>
