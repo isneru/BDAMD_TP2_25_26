@@ -106,7 +106,7 @@ Durante este processo, reparei também que as tabelas dimensionais estavam basta
 numAttrsDimTable >= numAttrsStagingTable + 3
 ```
 
-Onde o valor ~~4~~ 3 da fórmula refere-se ao número de atributos convencionais das tabelas dimensionais:
+Onde o valor 3 da fórmula refere-se ao número de atributos convencionais das tabelas dimensionais:
 
 - `<model>`Key
 - EffectiveDate
