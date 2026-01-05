@@ -1,0 +1,97 @@
+@startuml Dimensions
+!theme plain
+hide circle
+skinparam linetype ortho
+
+entity "FactSales" as fact {
+  *SalesKey : bigint <<PK>>
+  --
+  *DateKey : int <<FK>>
+  *ProductKey : int <<FK>>
+  *CustomerKey : int <<FK>>
+  *EmployeeKey : int <<FK>>
+  --
+  InvoiceID : int
+  LineNumber : int
+  Quantity : numeric(14, 4)
+  UnitPrice : numeric(19, 6)
+  TotalAmount : numeric(19, 6)
+}
+
+entity "DimDate" as date {
+  *DateKey: int <<PK>>
+  --
+  FullDate: datetime
+  Year: int
+  Semester: tinyint
+  Quarter: tinyint
+  Month: tinyint
+  MonthName: nvarchar(10)
+  Week: tinyint
+  DayNumberOfYear: int
+  DayNumberOfMonth: tinyint
+  DayNumberOfWeek: tinyint
+  DayOfWeek: nvarchar(10)
+  Weekend: nvarchar(3)
+}
+
+entity "DimProduct" as prod {
+  *ProductKey : int <<PK>>
+  --
+  ProductCode : char(18)
+  ProductDescription : nvarchar(60)
+  FamilyName : nvarchar(60)
+  Stock : numeric(13, 3)
+  UnitPrice : numeric(19, 6)
+  OrderPoint : numeric(10, 3)
+  MinimumStock : numeric(13, 3)
+  StartSellingDate : date
+  Category : nvarchar(25)
+  EffectiveDate : datetime
+  ExpiredDate : datetime
+  IsCurrent : bit
+}
+
+entity "DimCustomer" as cust {
+  *CustomerKey : int <<PK>>
+  --
+  CustomerNumber : numeric(10, 0)
+  Name : nvarchar(55)
+  TaxpayerNumber : nvarchar(20)
+  Fax : nvarchar(60)
+  Phone : nvarchar(60)
+  Contact : nvarchar(30)
+  Address : nvarchar(55)
+  ZipCode : nvarchar(10)
+  City : nvarchar(33)
+  Location : nvarchar(43)
+  CustomerType : nvarchar(20)
+  Email : nvarchar(45)
+  EffectiveDate : datetime
+  ExpiredDate : datetime
+  IsCurrent : bit
+}
+
+entity "DimEmployee" as emp {
+  *EmployeeKey : int <<PK>>
+  --
+  EmployeeNumber : numeric(6, 0)
+  Initials : nvarchar(3)
+  Code : nvarchar(20)
+  Forename : nvarchar(50)
+  Surname : nvarchar(50)
+  FullName : nvarchar(100)
+  Group : nvarchar(20)
+  DepartmentName : nvarchar(50)
+  Email : nvarchar(100)
+  EffectiveDate : datetime
+  ExpiredDate : datetime
+  IsCurrent : bit
+}
+
+date -down-|| fact
+fact -down-|| prod
+cust -right-|| fact
+fact -right-|| emp
+
+@enduml
