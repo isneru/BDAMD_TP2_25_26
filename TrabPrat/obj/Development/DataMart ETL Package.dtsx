@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="DataMart ETL Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="96"
-  DTS:VersionGUID="{7F4CF6E0-AE2C-41B9-B123-24DEB9534318}">
+  DTS:VersionBuild="99"
+  DTS:VersionGUID="{6A14A5A3-9769-4031-BB38-11B299A62623}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1569,11 +1569,11 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer"
+                  refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
-                  name="Insert into DimCustomer"
+                  name="Insert Into DimCustomer"
                   usesDispositions="true"
                   version="4">
                   <properties>
@@ -1626,7 +1626,7 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Connections[OleDbConnection]"
+                      refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[Steinway DataMart]"
                       connectionManagerRefId="Package.ConnectionManagers[Steinway DataMart]"
                       description="The OLE DB runtime connection used to access the database."
@@ -1634,197 +1634,197 @@
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input]"
+                      refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input]"
                       errorOrTruncationOperation="Insert"
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].Columns[Number]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].Columns[Number]"
                           cachedDataType="numeric"
                           cachedName="Number"
                           cachedPrecision="10"
-                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
+                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
                           lineageId="Package\Load Dimension Tables\Load DimCustomer\Union All.Outputs[Union All Output 1].Columns[Number]" />
                         <inputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].Columns[Name]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].Columns[Name]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="55"
                           cachedName="Name"
-                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
                           lineageId="Package\Load Dimension Tables\Load DimCustomer\Union All.Outputs[Union All Output 1].Columns[Name]" />
                         <inputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].Columns[TaxpayerNumber]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].Columns[TaxpayerNumber]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="20"
                           cachedName="TaxpayerNumber"
-                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[TaxpayerNumber]"
+                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[TaxpayerNumber]"
                           lineageId="Package\Load Dimension Tables\Load DimCustomer\Union All.Outputs[Union All Output 1].Columns[TaxpayerNumber]" />
                         <inputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].Columns[Fax]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].Columns[Fax]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="60"
                           cachedName="Fax"
-                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Fax]"
+                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Fax]"
                           lineageId="Package\Load Dimension Tables\Load DimCustomer\Union All.Outputs[Union All Output 1].Columns[Fax]" />
                         <inputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].Columns[Phone]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].Columns[Phone]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="60"
                           cachedName="Phone"
-                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
+                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
                           lineageId="Package\Load Dimension Tables\Load DimCustomer\Union All.Outputs[Union All Output 1].Columns[Phone]" />
                         <inputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].Columns[Contact]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].Columns[Contact]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="30"
                           cachedName="Contact"
-                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Contact]"
+                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Contact]"
                           lineageId="Package\Load Dimension Tables\Load DimCustomer\Union All.Outputs[Union All Output 1].Columns[Contact]" />
                         <inputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].Columns[Address]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].Columns[Address]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="55"
                           cachedName="Address"
-                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Address]"
+                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Address]"
                           lineageId="Package\Load Dimension Tables\Load DimCustomer\Union All.Outputs[Union All Output 1].Columns[Address]" />
                         <inputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].Columns[ZipCode]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].Columns[ZipCode]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="10"
                           cachedName="ZipCode"
-                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[ZipCode]"
+                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[ZipCode]"
                           lineageId="Package\Load Dimension Tables\Load DimCustomer\Union All.Outputs[Union All Output 1].Columns[ZipCode]" />
                         <inputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].Columns[City]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].Columns[City]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="33"
                           cachedName="City"
-                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[City]"
+                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[City]"
                           lineageId="Package\Load Dimension Tables\Load DimCustomer\Union All.Outputs[Union All Output 1].Columns[City]" />
                         <inputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].Columns[Location]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].Columns[Location]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="43"
                           cachedName="Location"
-                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Location]"
+                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Location]"
                           lineageId="Package\Load Dimension Tables\Load DimCustomer\Union All.Outputs[Union All Output 1].Columns[Location]" />
                         <inputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].Columns[Type]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].Columns[Type]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="20"
                           cachedName="Type"
-                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
+                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
                           lineageId="Package\Load Dimension Tables\Load DimCustomer\Union All.Outputs[Union All Output 1].Columns[Type]" />
                         <inputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].Columns[Email]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].Columns[Email]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="45"
                           cachedName="Email"
-                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
+                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
                           lineageId="Package\Load Dimension Tables\Load DimCustomer\Union All.Outputs[Union All Output 1].Columns[Email]" />
                         <inputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].Columns[EffectiveDate]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].Columns[EffectiveDate]"
                           cachedDataType="dbTimeStamp"
                           cachedName="EffectiveDate"
-                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[EffectiveDate]"
+                          externalMetadataColumnId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[EffectiveDate]"
                           lineageId="Package\Load Dimension Tables\Load DimCustomer\Set New Record EffectiveDate.Outputs[Derived Column Output].Columns[EffectiveDate]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[CustomerKey]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[CustomerKey]"
                           dataType="i4"
                           name="CustomerKey" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
                           dataType="numeric"
                           name="CustomerID"
                           precision="10" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
                           codePage="1252"
                           dataType="str"
                           length="55"
                           name="Name" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[TaxpayerNumber]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[TaxpayerNumber]"
                           codePage="1252"
                           dataType="str"
                           length="20"
                           name="TaxpayerNumber" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Fax]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Fax]"
                           codePage="1252"
                           dataType="str"
                           length="60"
                           name="Fax" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
                           codePage="1252"
                           dataType="str"
                           length="60"
                           name="Phone" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Contact]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Contact]"
                           codePage="1252"
                           dataType="str"
                           length="30"
                           name="Contact" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Address]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Address]"
                           codePage="1252"
                           dataType="str"
                           length="55"
                           name="Address" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[ZipCode]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[ZipCode]"
                           codePage="1252"
                           dataType="str"
                           length="10"
                           name="ZipCode" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[City]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[City]"
                           codePage="1252"
                           dataType="str"
                           length="33"
                           name="City" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Location]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Location]"
                           codePage="1252"
                           dataType="str"
                           length="43"
                           name="Location" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
                           codePage="1252"
                           dataType="str"
                           length="20"
                           name="Type" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
                           codePage="1252"
                           dataType="str"
                           length="45"
                           name="Email" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[EffectiveDate]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[EffectiveDate]"
                           dataType="dbTimeStamp"
                           name="EffectiveDate" />
                         <externalMetadataColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[ExpiredDate]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[ExpiredDate]"
                           dataType="dbTimeStamp"
                           name="ExpiredDate" />
                       </externalMetadataColumns>
@@ -1832,22 +1832,22 @@
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Outputs[OLE DB Destination Error Output]"
+                      refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Outputs[OLE DB Destination Error Output]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input]">
+                      synchronousInputId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          refId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -3267,7 +3267,7 @@ where [refTable].[Code] = ?</property>
                   startId="Package\Load Dimension Tables\Load DimCustomer\Set Old Record ExpiredDate.Outputs[Derived Column Output]" />
                 <path
                   refId="Package\Load Dimension Tables\Load DimCustomer.Paths[Derived Column Output1]"
-                  endId="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer.Inputs[OLE DB Destination Input]"
+                  endId="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer.Inputs[OLE DB Destination Input]"
                   name="Derived Column Output"
                   startId="Package\Load Dimension Tables\Load DimCustomer\Set New Record EffectiveDate.Outputs[Derived Column Output]" />
                 <path
@@ -4927,36 +4927,36 @@ where [refTable].[Code] = ?</property>
         <NodeLayout
           Size="146,42"
           Id="Package\Load Temporal Dimension\Load DimDate"
-          TopLeft="56,112" />
+          TopLeft="57,125" />
         <EdgeLayout
           Id="Package\Load Temporal Dimension.PrecedenceConstraints[Constraint]"
-          TopLeft="132,63.5">
+          TopLeft="132.5,63.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,48.5"
+              EndConnector="0,61.5"
               Start="0,0"
-              End="0,41">
+              End="0,54">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,41" />
+                    End="0,54" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-8,12.5,16,16"
+              BoundingBox="-8,19,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="249,209"
-          Size="249,252"
+          PanelSize="249,222"
+          Size="249,265"
           Id="Package\Load Temporal Dimension"
           TopLeft="698.571428571429,449" />
         <EdgeLayout
@@ -5083,30 +5083,30 @@ where [refTable].[Code] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="823.071428571429,701">
+          TopLeft="823.071428571429,714">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-168.58658008658,97.3636363636371"
+              EndConnector="-168.58658008658,84.3636363636371"
               Start="0,0"
-              End="-168.58658008658,89.8636363636371">
+              End="-168.58658008658,76.8636363636371">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,54.0214539280757" />
+                    End="0,46.2744250655969" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,54.0214539280757"
-                    Point2="0,58.0214539280757"
-                    Point3="-4,58.0214539280757" />
+                    Point1="0,46.2744250655969"
+                    Point2="0,50.2744250655969"
+                    Point3="-4,50.2744250655969" />
                   <mssgle:LineSegment
-                    End="-164.58658008658,58.0214539280757" />
+                    End="-164.58658008658,50.2744250655969" />
                   <mssgle:CubicBezierSegment
-                    Point1="-164.58658008658,58.0214539280757"
-                    Point2="-168.58658008658,58.0214539280757"
-                    Point3="-168.58658008658,62.0214539280757" />
+                    Point1="-164.58658008658,50.2744250655969"
+                    Point2="-168.58658008658,50.2744250655969"
+                    Point3="-168.58658008658,54.2744250655969" />
                   <mssgle:LineSegment
-                    End="-168.58658008658,89.8636363636371" />
+                    End="-168.58658008658,76.8636363636371" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5124,16 +5124,20 @@ where [refTable].[Code] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="124,42"
-          Id="Package\Load Dimension Tables\Load DimCustomer\Customer"
-          TopLeft="183.5,5.5" />
-        <NodeLayout
           Size="184,42"
           Id="Package\Load Dimension Tables\Load DimCustomer\Lookup CustomerType"
-          TopLeft="153.5,107.5" />
+          TopLeft="503,107.5" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Load Dimension Tables\Load DimCustomer\Slowly Changing Dimension"
+          TopLeft="490.5,209.5" />
+        <NodeLayout
+          Size="124,42"
+          Id="Package\Load Dimension Tables\Load DimCustomer\Customer"
+          TopLeft="533,5.5" />
         <EdgeLayout
           Id="Package\Load Dimension Tables\Load DimCustomer.Paths[OLE DB Source Output]"
-          TopLeft="245.5,47.5">
+          TopLeft="595,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5153,13 +5157,9 @@ where [refTable].[Code] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="209,42"
-          Id="Package\Load Dimension Tables\Load DimCustomer\Slowly Changing Dimension"
-          TopLeft="141,209.5" />
         <EdgeLayout
           Id="Package\Load Dimension Tables\Load DimCustomer.Paths[Lookup Match Output]"
-          TopLeft="245.5,149.5">
+          TopLeft="595,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5184,50 +5184,138 @@ where [refTable].[Code] = ?</property>
         <NodeLayout
           Size="210,42"
           Id="Package\Load Dimension Tables\Load DimCustomer\Set Old Record ExpiredDate"
-          TopLeft="0.500000000000057,310.5" />
+          TopLeft="329,337.5" />
         <EdgeLayout
           Id="Package\Load Dimension Tables\Load DimCustomer.Paths[Historical Attribute Inserts Output]"
-          TopLeft="195.25,251.5">
+          TopLeft="544.75,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-89.75,59"
+              EndConnector="-110.75,86"
               Start="0,0"
-              End="-89.75,51.5">
+              End="-110.75,78.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.1622047244094" />
+                    End="0,36.3889763779528" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,16.1622047244094"
-                    Point2="0,20.1622047244094"
-                    Point3="-4,20.1622047244094" />
+                    Point1="0,36.3889763779528"
+                    Point2="0,40.3889763779528"
+                    Point3="-4,40.3889763779528" />
                   <mssgle:LineSegment
-                    End="-85.75,20.1622047244094" />
+                    End="-106.75,40.3889763779528" />
                   <mssgle:CubicBezierSegment
-                    Point1="-85.75,20.1622047244094"
-                    Point2="-89.75,20.1622047244094"
-                    Point3="-89.75,24.1622047244094" />
+                    Point1="-106.75,40.3889763779528"
+                    Point2="-110.75,40.3889763779528"
+                    Point3="-110.75,44.3889763779528" />
                   <mssgle:LineSegment
-                    End="-89.75,51.5" />
+                    End="-110.75,78.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-119.93138671875,25.1622047244094,150.1127734375,11.609375"
+              BoundingBox="-130.43138671875,45.3889763779528,150.1127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
           Size="163,42"
           Id="Package\Load Dimension Tables\Load DimCustomer\Expire Old Record"
-          TopLeft="18.5000000000001,413.5" />
+          TopLeft="348,424.5" />
         <EdgeLayout
           Id="Package\Load Dimension Tables\Load DimCustomer.Paths[Derived Column Output]"
-          TopLeft="102.75,352.5">
+          TopLeft="431.75,379.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45"
+              Start="0,0"
+              End="0,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Load Dimension Tables\Load DimCustomer\Union All"
+          TopLeft="515.5,513.5" />
+        <EdgeLayout
+          Id="Package\Load Dimension Tables\Load DimCustomer.Paths[New Output]"
+          TopLeft="594.916666666667,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,262"
+              Start="0,0"
+              End="0,254.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,254.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-27.09138671875,121.533203125,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Dimension Tables\Load DimCustomer.Paths[OLE DB Command Output]"
+          TopLeft="429.5,466.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="127.666666666667,47"
+              Start="0,0"
+              End="127.666666666667,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.8319738988581" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.8319738988581"
+                    Point2="0,27.8319738988581"
+                    Point3="4,27.8319738988581" />
+                  <mssgle:LineSegment
+                    End="123.666666666667,27.8319738988581" />
+                  <mssgle:CubicBezierSegment
+                    Point1="123.666666666667,27.8319738988581"
+                    Point2="127.666666666667,27.8319738988581"
+                    Point3="127.666666666667,31.8319738988581" />
+                  <mssgle:LineSegment
+                    End="127.666666666667,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="220,42"
+          Id="Package\Load Dimension Tables\Load DimCustomer\Set New Record EffectiveDate"
+          TopLeft="469.5,616.5" />
+        <EdgeLayout
+          Id="Package\Load Dimension Tables\Load DimCustomer.Paths[Union All Output 1]"
+          TopLeft="577.75,555.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5248,111 +5336,23 @@ where [refTable].[Code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="121,42"
-          Id="Package\Load Dimension Tables\Load DimCustomer\Union All"
-          TopLeft="173,514.5" />
-        <EdgeLayout
-          Id="Package\Load Dimension Tables\Load DimCustomer.Paths[New Output]"
-          TopLeft="248.916666666667,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,263"
-              Start="0,0"
-              End="0,255.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,255.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-27.09138671875,122.033203125,54.1827734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Dimension Tables\Load DimCustomer.Paths[OLE DB Command Output]"
-          TopLeft="100,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="114.666666666667,59"
-              Start="0,0"
-              End="114.666666666667,51.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.9380097879282" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.9380097879282"
-                    Point2="0,34.9380097879282"
-                    Point3="4,34.9380097879282" />
-                  <mssgle:LineSegment
-                    End="110.666666666667,34.9380097879282" />
-                  <mssgle:CubicBezierSegment
-                    Point1="110.666666666667,34.9380097879282"
-                    Point2="114.666666666667,34.9380097879282"
-                    Point3="114.666666666667,38.9380097879282" />
-                  <mssgle:LineSegment
-                    End="114.666666666667,51.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="220,42"
-          Id="Package\Load Dimension Tables\Load DimCustomer\Set New Record EffectiveDate"
-          TopLeft="130,614.5" />
-        <EdgeLayout
-          Id="Package\Load Dimension Tables\Load DimCustomer.Paths[Union All Output 1]"
-          TopLeft="236.75,556.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,58"
-              Start="0,0"
-              End="0,50.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,50.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="195,42"
-          Id="Package\Load Dimension Tables\Load DimCustomer\Insert into DimCustomer"
-          TopLeft="141,719.5" />
+          Size="196,42"
+          Id="Package\Load Dimension Tables\Load DimCustomer\Insert Into DimCustomer"
+          TopLeft="476.5,723.5" />
         <EdgeLayout
           Id="Package\Load Dimension Tables\Load DimCustomer.Paths[Derived Column Output1]"
-          TopLeft="239.25,656.5">
+          TopLeft="577,658.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,63"
+              EndConnector="0,65"
               Start="0,0"
-              End="0,55.5">
+              End="0,57.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.5" />
+                    End="0,57.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5364,46 +5364,176 @@ where [refTable].[Code] = ?</property>
         <NodeLayout
           Size="179,42"
           Id="Package\Load Dimension Tables\Load DimCustomer\Update DimCustomer"
-          TopLeft="307,311.5" />
+          TopLeft="692.5,434.5" />
         <EdgeLayout
           Id="Package\Load Dimension Tables\Load DimCustomer.Paths[Changing Attribute Updates Output]"
-          TopLeft="295.75,251.5">
+          TopLeft="645.25,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="100.75,60"
+              EndConnector="136.75,183"
               Start="0,0"
-              End="100.75,52.5">
+              End="136.75,175.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.503937007874" />
+                    End="0,36.5370078740157" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,16.503937007874"
-                    Point2="0,20.503937007874"
-                    Point3="4,20.503937007874" />
+                    Point1="0,36.5370078740157"
+                    Point2="0,40.5370078740157"
+                    Point3="4,40.5370078740157" />
                   <mssgle:LineSegment
-                    End="96.75,20.503937007874" />
+                    End="132.75,40.5370078740157" />
                   <mssgle:CubicBezierSegment
-                    Point1="96.75,20.503937007874"
-                    Point2="100.75,20.503937007874"
-                    Point3="100.75,24.503937007874" />
+                    Point1="132.75,40.5370078740157"
+                    Point2="136.75,40.5370078740157"
+                    Point3="136.75,44.5370078740157" />
                   <mssgle:LineSegment
-                    End="100.75,52.5" />
+                    End="136.75,175.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-28.15890625,25.503937007874,157.0678125,11.6630859375"
+              BoundingBox="-10.15890625,45.5370078740157,157.0678125,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Dimension Tables\Load DimCustomer\Lookup CustomerType">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[CustomerTypes]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Dimension Tables\Load DimCustomer\Slowly Changing Dimension">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionID&gt;{2EACFE25-24F2-41C3-9ACB-CCD30E2F5B2E}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[DimCustomer]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Address]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Address&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[City]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;City&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Contact]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Contact&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Number]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;CustomerID&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Email]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Email&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Fax]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Fax&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Location]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Location&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Name]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Name&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Phone]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Phone&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[TaxpayerNumber]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;TaxpayerNumber&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;FixedAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Lookup CustomerType.Outputs[Lookup Match Output].Columns[Type]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Type&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[ZipCode]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;ZipCode&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Derived Column&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Union All&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Derived Column 1&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;true&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;true&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;true&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn&gt;EffectiveDate&lt;/StartDateColumn&gt;
+  &lt;EndDateColumn&gt;ExpiredDate&lt;/EndDateColumn&gt;
+  &lt;DateVariable&gt;System::ContainerStartTime&lt;/DateVariable&gt;
+  &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load Dimension Tables\Load DimCustomer\Customer">
     <Properties>
@@ -5518,136 +5648,6 @@ where [refTable].[Code] = ?</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Dimension Tables\Load DimCustomer\Lookup CustomerType">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[CustomerTypes]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Dimension Tables\Load DimCustomer\Slowly Changing Dimension">
-    <Properties>
-      <Property>
-        <Name>SCDMetadata</Name>
-        <Value
-          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{2EACFE25-24F2-41C3-9ACB-CCD30E2F5B2E}&lt;/ConnectionID&gt;
-  &lt;TableName&gt;[dbo].[DimCustomer]&lt;/TableName&gt;
-  &lt;InputToColumnsCollection&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Address]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Address&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[City]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;City&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Contact]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Contact&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Number]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;CustomerID&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Email]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Email&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Fax]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Fax&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Location]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Location&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Name]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Name&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[Phone]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Phone&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[TaxpayerNumber]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;TaxpayerNumber&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;FixedAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Lookup CustomerType.Outputs[Lookup Match Output].Columns[Type]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Type&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Customer.Outputs[OLE DB Source Output].Columns[ZipCode]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;ZipCode&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-  &lt;/InputToColumnsCollection&gt;
-  &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Derived Column&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Union All&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Derived Column 1&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command 1&lt;/anyType&gt;
-  &lt;/GeneratedComponentsIdentificationStrings&gt;
-  &lt;FailFixedAttribute&gt;true&lt;/FailFixedAttribute&gt;
-  &lt;FailChangeAttribute&gt;true&lt;/FailChangeAttribute&gt;
-  &lt;UseStartEndDate&gt;true&lt;/UseStartEndDate&gt;
-  &lt;CurrentIndicatorColumn /&gt;
-  &lt;InferredIndicatorColumn /&gt;
-  &lt;ValueCurrent /&gt;
-  &lt;ValueExpired /&gt;
-  &lt;StartDateColumn&gt;EffectiveDate&lt;/StartDateColumn&gt;
-  &lt;EndDateColumn&gt;ExpiredDate&lt;/EndDateColumn&gt;
-  &lt;DateVariable&gt;System::ContainerStartTime&lt;/DateVariable&gt;
-  &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
-&lt;/SCDWizardMetadata&gt;</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
