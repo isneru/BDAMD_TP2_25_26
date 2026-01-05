@@ -89,9 +89,8 @@ entity "DimEmployee" as emp {
   IsCurrent : bit
 }
 
-date -down-|| fact
-fact -down-|| prod
-cust -right-|| fact
-fact -right-|| emp
-
+fact }|-up-|| date
+fact }|-down-|| prod
+fact }|-left-|| cust
+fact }|-right-|| emp
 @enduml
