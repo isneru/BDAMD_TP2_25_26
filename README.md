@@ -119,3 +119,13 @@ Onde o valor 3 da fórmula refere-se ao número de atributos convencionais das t
 
 Para concretizar a operação presente, achei correto modificar os nomes das **Business Keys** (BK) para `<model_name>ID` para uma maior compreensão dos Modelos.
 Seguindo a onda de "otimização superficial", decidi mudar todos os atributos com tipo `nvarchar` para `varchar` para evitar fazer conversões (string -> Unicode string) durante o processo de **Transformation**.
+
+Analisei também as tabelas e os respetivos tipos de dados para definir a nulabilidade dos atributos no Data Mart.
+
+Terminando a operação de **ETL** do `DimCustomer`, passei por bastantes complicações, destacando:
+
+- O operador de condição (ternary) ser muito restrito a comparar valores devido a **Type Castings**.
+- Valores que violem a lógica de negócio (tais como `TaxpayerNumber` com o valor `"000000000"`) que obrigam a procurar por valores fixos.
+- Lógica de valores **Boolean** em **Expressions**, em que o valor `NULL` é considerado "desconhecido" no SQL e não se avalia como `FALSE`, obrigando a fazer verificações adicionais com `ISNULL()`.
+
+Estes obstáculos fazem com que as verificações necessitem de ser mais trabalhadas para que sejam realmente eficazes.

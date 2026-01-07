@@ -15,6 +15,5 @@ BEGIN
         [ExpiredDate] [datetime] NULL,
         CONSTRAINT [PK_DimEmployee] PRIMARY KEY CLUSTERED ([EmployeeKey] ASC)
     ) ON [PRIMARY]
-
-    CREATE NONCLUSTERED INDEX [IX_DimEmployee_EmployeeID] ON [dbo].[DimEmployee]([EmployeeID] ASC)
+    CREATE NONCLUSTERED INDEX [NonClusteredIndex-EmployeeID] ON [dbo].[DimEmployee]([EmployeeID] ASC)
 END

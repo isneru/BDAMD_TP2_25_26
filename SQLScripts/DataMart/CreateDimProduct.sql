@@ -15,5 +15,5 @@ BEGIN
         [ExpiredDate] [datetime] NULL,
         CONSTRAINT [PK_DimProduct] PRIMARY KEY CLUSTERED ([ProductKey] ASC)
     ) ON [PRIMARY]
-    CREATE NONCLUSTERED INDEX [IX_DimProduct_ProductID] ON [dbo].[DimProduct]([ProductID] ASC)
+    CREATE NONCLUSTERED INDEX [NonClusteredIndex-ProductID] ON [dbo].[DimProduct]([ProductID] ASC)
 END
