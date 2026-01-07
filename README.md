@@ -129,3 +129,10 @@ Terminando a operação de **ETL** do `DimCustomer`, passei por bastantes compli
 - Lógica de valores **Boolean** em **Expressions**, em que o valor `NULL` é considerado "desconhecido" no SQL e não se avalia como `FALSE`, obrigando a fazer verificações adicionais com `ISNULL()`.
 
 Estes obstáculos fazem com que as verificações necessitem de ser mais trabalhadas para que sejam realmente eficazes.
+
+Para o **Loading** das tabelas dimensionais, achei vantajoso adicionar alguns atributos relativamente às tabelas **Staging**:
+
+| _Tabela Staging_ | _Atributo Adicionado_ |          _Tipo_         |     _Descrição/Utilidade_     |
+|:----------------:|:---------------------:|:-----------------------:|:-----------------------------:|
+| Employees        | FullName              | `varchar(100) NOT NULL` | Análise de Dados Future-Proof |
+| Products         | StockLeftToOrder      | `bigint NOT NULL`       | Análise de Dados Future-Proof |
