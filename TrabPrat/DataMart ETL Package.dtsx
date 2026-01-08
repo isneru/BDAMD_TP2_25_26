@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="DataMart ETL Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="309"
-  DTS:VersionGUID="{92C21AE2-6F5B-4A9C-94BB-D9071CDF18D4}">
+  DTS:VersionBuild="310"
+  DTS:VersionGUID="{475766EB-7AD6-4627-960D-93ACC1C4FB0A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -970,7 +970,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Create DataMart DB"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -988,7 +988,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Create Staging DB"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1035,7 +1035,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute DataMart Create Script"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1092,7 +1092,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute Staging Create Script"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1149,7 +1149,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get TableName by Script FileName"
           DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <ExpressionTask
@@ -1166,7 +1166,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Select from original table and insert into staging"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -3434,13 +3434,13 @@ where [refTable].[Code] = ?</property>
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Expression"
-                              name="Expression">(DT_STR,33,1252)(#{Package\Load Dimension Tables\Load DimCustomer\Validate Data.Outputs[Derived Column Output].Columns[NullifyCity]} ? NULL(DT_WSTR,33) : [TRIM](#{Package\Load Dimension Tables\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[City]}))</property>
+                              name="Expression">(DT_STR,50,1252)(#{Package\Load Dimension Tables\Load DimCustomer\Validate Data.Outputs[Derived Column Output].Columns[NullifyCity]} ? NULL(DT_WSTR,33) : [TRIM](#{Package\Load Dimension Tables\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[City]}))</property>
                             <property
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Friendly Expression"
                               expressionType="Notify"
-                              name="FriendlyExpression">(DT_STR,33,1252)(NullifyCity ? NULL(DT_WSTR,33) : TRIM(City))</property>
+                              name="FriendlyExpression">(DT_STR,50,1252)(NullifyCity ? NULL(DT_WSTR,33) : TRIM(City))</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
@@ -3459,13 +3459,13 @@ where [refTable].[Code] = ?</property>
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Expression"
-                              name="Expression">(DT_STR,43,1252)(#{Package\Load Dimension Tables\Load DimCustomer\Validate Data.Outputs[Derived Column Output].Columns[NullifyLocation]} ? NULL(DT_WSTR,43) : [TRIM](#{Package\Load Dimension Tables\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[Location]}))</property>
+                              name="Expression">(DT_STR,50,1252)(#{Package\Load Dimension Tables\Load DimCustomer\Validate Data.Outputs[Derived Column Output].Columns[NullifyLocation]} ? NULL(DT_WSTR,43) : [TRIM](#{Package\Load Dimension Tables\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[Location]}))</property>
                             <property
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Friendly Expression"
                               expressionType="Notify"
-                              name="FriendlyExpression">(DT_STR,43,1252)(NullifyLocation ? NULL(DT_WSTR,43) : TRIM(Location))</property>
+                              name="FriendlyExpression">(DT_STR,50,1252)(NullifyLocation ? NULL(DT_WSTR,43) : TRIM(Location))</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
@@ -6819,7 +6819,7 @@ where [refTable].[Code] = ?</property>
                               dataType="System.String"
                               description="Derived Column Friendly Expression"
                               expressionType="Notify"
-                              name="FriendlyExpression">TRIM(DepartmentDesc)</property>
+                              name="FriendlyExpression">TRIM(Department)</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
@@ -15590,9 +15590,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15614,9 +15612,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15650,9 +15646,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15806,9 +15800,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15830,9 +15822,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15854,9 +15844,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15878,9 +15866,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15902,9 +15888,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16186,9 +16170,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16246,9 +16228,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16270,9 +16250,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16306,9 +16284,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16462,9 +16438,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16486,9 +16460,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16510,9 +16482,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16534,9 +16504,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16558,9 +16526,7 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17625,6 +17591,29 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Load FactSales\Lookup DimDateKey">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimDate]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Load FactSales\Lookup EmployeeKey">
     <Properties>
       <Property>
@@ -17644,42 +17633,6 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load FactSales\Lookup CustomerKey">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load FactSales\FactSalesDQP">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -17707,10 +17660,15 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load FactSales\Sale &amp; SaleDetail">
+    design-time-name="Package\Load FactSales\FactSalesDQP">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -17728,23 +17686,31 @@ GROUP BY Sales.SaleID, Sales.SaleDate, Sales.CustomerNumber, Sales.EmployeeNumbe
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load FactSales\Lookup DimDateKey">
+    design-time-name="Package\Load FactSales\Lookup CustomerKey">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DimDate]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load FactSales\Sale &amp; SaleDetail">
+    <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>

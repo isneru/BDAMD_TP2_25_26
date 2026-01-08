@@ -3,7 +3,7 @@ BEGIN
     CREATE TABLE [dbo].[DimEmployee](
         [EmployeeKey] [int] IDENTITY(1,1) NOT NULL,
         [EmployeeID] [numeric](6, 0) NOT NULL,
-        [Initials] [varchar](3) NOT NULL,
+        [Initials] [varchar](10) NOT NULL,
         [Code] [varchar](20) NOT NULL,
         [Forename] [varchar](50) NOT NULL,
         [Surname] [varchar](50) NOT NULL,

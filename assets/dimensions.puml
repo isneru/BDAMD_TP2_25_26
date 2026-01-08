@@ -1,21 +1,19 @@
 @startuml Dimensions
-!theme plain
+skinparam defaultFontName "Consolas"
 hide circle
 skinparam linetype ortho
 
 entity "FactSales" as fact {
-  *SalesKey : bigint <<PK>>
+  *DateKey: int <<FK>>
+  *ProductKey: int <<FK>>
+  *CustomerKey: int <<FK>>
+  *EmployeeKey: int <<FK>>
   --
-  *DateKey : int <<FK>>
-  *ProductKey : int <<FK>>
-  *CustomerKey : int <<FK>>
-  *EmployeeKey : int <<FK>>
-  --
-  InvoiceID : int
-  LineNumber : int
-  Quantity : numeric(14, 4)
-  UnitPrice : numeric(19, 6)
-  TotalAmount : numeric(19, 6)
+  InvoiceID: int
+  LineNumber: int
+  Quantity: bigint
+  UnitPrice: numeric(19, 2)
+  TotalAmount: numeric(19, 2)
 }
 
 entity "DimDate" as date {
@@ -36,54 +34,54 @@ entity "DimDate" as date {
 }
 
 entity "DimProduct" as prod {
-  *ProductKey : int <<PK>>
+  *ProductKey: int <<PK>>
   --
-  ProductID : char(18)
-  Description : varchar(60)
-  FamilyName : varchar(60)
-  Stock : numeric(13, 3)
-  UnitPrice : numeric(19, 6)
-  OrderPoint : numeric(10, 3)
-  MinimumStock : numeric(13, 3)
-  StartSellingDate : date
-  Category : varchar(25)
-  EffectiveDate : datetime
-  ExpiredDate : datetime
+  ProductID: char(18)
+  Description: varchar(60)
+  FamilyName: varchar(60)
+  Stock: bigint
+  UnitPrice: numeric(19, 2)
+  OrderPoint: bigint
+  MinimumStock: bigint
+  StartSellingDate: date
+  Category: varchar(25)
+  EffectiveDate: datetime
+  ExpiredDate: datetime
 }
 
 entity "DimCustomer" as cust {
-  *CustomerKey : int <<PK>>
+  *CustomerKey: int <<PK>>
   --
-  CustomerID : numeric(10, 0)
-  Name : varchar(55)
-  TaxpayerNumber : varchar(20)
-  Fax : varchar(60)
-  Phone : varchar(60)
-  Contact : varchar(30)
-  Address : varchar(55)
-  ZipCode : varchar(10)
-  City : varchar(33)
-  Location : varchar(43)
-  Type : varchar(20)
-  Email : varchar(45)
-  EffectiveDate : datetime
-  ExpiredDate : datetime
+  CustomerID: numeric(10, 0)
+  Name: varchar(55)
+  TaxpayerNumber: varchar(20)
+  Fax: varchar(60)
+  Phone: varchar(60)
+  Contact: varchar(30)
+  Address: varchar(55)
+  ZipCode: varchar(10)
+  City: varchar(50)
+  Location: varchar(50)
+  Type: varchar(20)
+  Email: varchar(45)
+  EffectiveDate: datetime
+  ExpiredDate: datetime
 }
 
 entity "DimEmployee" as emp {
-  *EmployeeKey : int <<PK>>
+  *EmployeeKey: int <<PK>>
   --
-  EmployeeID : numeric(6, 0)
-  Initials : varchar(3)
-  Code : varchar(20)
-  Forename : varchar(50)
-  Surname : varchar(50)
-  FullName : varchar(100)
-  Group : varchar(20)
-  DepartmentName : varchar(50)
-  Email : varchar(100)
-  EffectiveDate : datetime
-  ExpiredDate : datetime
+  EmployeeID: numeric(6, 0)
+  Initials: varchar(10)
+  Code: varchar(20)
+  Forename: varchar(50)
+  Surname: varchar(50)
+  FullName: varchar(100)
+  Group: varchar(20)
+  DepartmentName: varchar(50)
+  Email: varchar(100)
+  EffectiveDate: datetime
+  ExpiredDate: datetime
 }
 
 fact }|-up-|| date
