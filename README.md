@@ -132,7 +132,9 @@ Estes obstáculos fazem com que as verificações necessitem de ser mais trabalh
 
 Para o **Loading** das tabelas dimensionais, achei vantajoso adicionar alguns atributos relativamente às tabelas **Staging**:
 
-| _Tabela Staging_ | _Atributo Adicionado_ |          _Tipo_         |     _Descrição/Utilidade_     |
-|:----------------:|:---------------------:|:-----------------------:|:-----------------------------:|
-| Employees        | FullName              | `varchar(100) NOT NULL` | Análise de Dados Future-Proof |
-| Products         | StockLeftToOrder      | `bigint NOT NULL`       | Análise de Dados Future-Proof |
+| _Tabela Staging_ | _Atributo Adicionado_ |         _Tipo_          |     _Descrição/Utilidade_     |
+| :--------------: | :-------------------: | :---------------------: | :---------------------------: |
+|    Employees     |       FullName        | `varchar(100) NOT NULL` | Análise de Dados Future-Proof |
+|     Products     |   StockLeftToOrder    |    `bigint NOT NULL`    | Análise de Dados Future-Proof |
+
+# Fase 6 - Fact Sales ETL
