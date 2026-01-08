@@ -138,3 +138,11 @@ Para o **Loading** das tabelas dimensionais, achei vantajoso adicionar alguns at
 |     Products     |   StockLeftToOrder    |    `bigint NOT NULL`    | Análise de Dados Future-Proof |
 
 # Fase 6 - Fact Sales ETL
+
+O processo de **Loading** da **tabela de factos** foi bastante mais direto visto que a arquitetura da implementação do **Projeto/Pacote ETL** já estava pré-definida devido à realização das etapas anteriores.
+
+Vale ressaltar que o objetivo principal do pacote é existir para ser executado de X em X tempo, mesmo quando as tabelas ainda não existam. Para garantir isso, foi necessário **ativar** a opção `DelayValidation` em qualquer task/container que não seja executado primeiro, isto é:
+
+![Example Diagram](assets/example_diagram.png)
+
+Como o **Elemento (A)** é o primeiro a ser executado, não necessita da opção `DelayValidation`. Já os **Elementos (B), (C) e (D)** deste contexto, sendo tarefas executadas **após** a execução do **(A)** devem ter a validação "atrasada" ligada. Isto deve-se ao simples facto de que uma tarefa pode manipular algo que só exista depois de certas tarefas terem sido executadas.
