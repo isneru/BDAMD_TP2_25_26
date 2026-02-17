@@ -1,8 +1,12 @@
+
+
 > [!WARNING]
 >
 > Este repositório serve apenas como bloco de notas pessoal/Second Brain para o desenvolvimento do projeto.
+> 
+> **Nota final: 19.1/20**
 
-- [ ] **Desenvolver um Data Mart que permita a realização de análises variadas às vendas efetuadas aos clientes.**
+- [x] **Desenvolver um Data Mart que permita a realização de análises variadas às vendas efetuadas aos clientes.**
 
 ![ER_Diagram](assets/ER_Diagram.png)
 
